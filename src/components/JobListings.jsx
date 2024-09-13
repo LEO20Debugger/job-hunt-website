@@ -2,6 +2,8 @@ import React from "react";
 import jobs from '../jobs.json';
 
 const JobListings = () => {
+
+const recentjobs = job.slice(0, 3);
      
   return (
     <section class="bg-blue-50 px-4 py-10">
@@ -10,7 +12,7 @@ const JobListings = () => {
           Browse Jobs
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          { jobs.map((job) => (
+          { recentjobsjobs.map((job) => (
 
 <div class="bg-white rounded-xl shadow-md relative">
 <div class="p-4">
